@@ -1,0 +1,5 @@
+#!/bin/bash
+SERVER=$1
+PORT=$2
+TIMEOUT=25
+/usr/lib/zabbix/externalscripts/ssl-check -s $SERVER -p $PORT -n | awk -F= '{ print $2 }'
