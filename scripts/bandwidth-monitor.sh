@@ -4,10 +4,6 @@ iface=$1
 rxtx=$2
 time=$3
 
-echo "iface: $iface"
-echo "rxtx: $rxtx"
-echo "time: $time"
-
 case "$rxtx" in
         ttl)
                 case "$time" in
